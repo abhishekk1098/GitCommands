@@ -14,8 +14,7 @@ $ git config : This command sets the author name and email address respectively 
 $ git status: This command discards all history and goes back to the specified commit.
 
 	   Usage: git status
-================================================================================================================
-=======
+=======================================================================================================================
 
 1) git init: It creates a local repository in the given folder from where we need to upload file or project onto GitHub.	
 			 It generates a file as ".git" which is by default hidden.
@@ -31,7 +30,19 @@ $ git status: This command discards all history and goes back to the specified c
 
 4) git remote: This command is used to connect your local repository to the remote server.
 			   git remote add [variable name] [Remote Server Link]
-			   
+	
+###############	
+   
+Optional Step - 
+-> Github recently renamed master branch as main branch.
+-> In git bash if it is still showing master branch, then rename it.
+-> $ git branch -m master main
+
+OR
+
+-> Rename main to master on github itself and follow the remaining steps as it is. 
+
+##############
 
 **** If there are already file in repository then we first need to pull those files and then push it.
 
