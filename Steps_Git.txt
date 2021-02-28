@@ -4,33 +4,35 @@
 
 $ git config : This command sets the author name and email address respectively to be used with your commits.
 
-		Usage: git config --global user.name “[name]”  
+		Syntax : git config --global user.name “[name]”  
 			   git config --global user.name "abc"
 
 
-		Usage: git config --global user.email “[email address]”
+		Syntax: git config --global user.email “[email address]”
 			   git config --global user.emali "abc@gmail.com"
 
-$ git status: This command discards all history and goes back to the specified commit.
-
-	   Usage: git status
+$ git status: The git status command displays the state of the working directory and the staging area.
+		Syntax : git status
 =======================================================================================================================
 
-1) git init: It creates a local repository in the given folder from where we need to upload file or project onto GitHub.	
-			 It generates a file as ".git" which is by default hidden.
-			 SYNTAX: git init
+1) git init: The git init command initialize a new, empty Git repository.	
+	     It generates a file as ".git" which is by default hidden.
+	    	Syntax: git init
 
-2) git add:  Allows you to upload file from a given folder to GitHub.
-			 You can add single or multiple Files.
-			 SYNTAX: git add . (add all files in the folder)
-			 		 git add [filename] (adds single file)
+2) git add:  The git add command adds a change in the working directory to the staging area. 
+	     It tells Git that you want to include updates to a particular file in the next commit.
+	     One can add single or multiple Files.
+		Syntax : git add . (add all files in the folder)
+			 git add [filename] (adds single file)
 
-3) git commit: This command records or snapshots the file permanently in the version history.
-			   git commit -m “[ Type in the commit message]”
+3) git commit: In Git, commit is the term used for saving changes. 
+	       Git does not add changes to a commit automatically. 
+	       You need to indicate which file and changes need to be saved before running the Git commit command. 
+		Syntax : git commit -m “[ Type in the commit message]”
 
-4) git remote: This command is used to connect your local repository to the remote server.
-			   git remote add [variable name] [Remote Server Link]
-	
+4) git remote: This command is used to connect your local repository to the remote repository.
+		Syntax : git remote add [variable name] [Remote Server Link]
+				git remote add origin master(or main)	
 ###############	
    
 Optional Step - 
@@ -46,25 +48,18 @@ OR
 
 **** If there are already file in repository then we first need to pull those files and then push it.
 
-5) git pull:This command fetches and merges changes on the remote server to your working directory
-			
-			**Try Either of these commands if it shows error!!
-			git pull [Repository Link]
-			OR
-			git pull 
-			OR
-			git pull origin master
-			OR
-			git pull origin master --allow-unrelated-histories
+5) git pull:This command fetches and merges changes from a remote repository and immediately update the local repository
+		Syntax : git pull [variable name] [branch name]
+				git pull origin master(or main)
+				
+				**Try Either of these commands if it shows error!!
+				git pull [Repository Link]
+				OR
+				git pull origin master --allow-unrelated-histories
 
 
-6) git push: This command sends the committed changes of master branch to your remote repository.
-			 git push [variable name] master(The main branch is called master)
+6) git push: The git push command is used to upload local repository content to a remote repository.
+		Syntax : git push [variable name] [branch name] 
+				git push origin master(or main) (The main branch is called master)
 
 =======================================================================================================================
-
-Some other Commands - 
-
-1) git log
-2) git checkout
-3) git reset etc..
