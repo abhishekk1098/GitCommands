@@ -62,4 +62,26 @@ OR
 		Syntax : git push [variable name] [branch name] 
 				git push origin master(or main) (The main branch is called master)
 
+7) git stash: It temporarily stashes changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
+		Syntax : git stash
+
+8) git stash pop: Popping your stash removes the changes from your stash and reapplies them to your working copy.
+		Syntax : git stash pop
+
+9) git stash apply: Reapply the changes to working copy and also keep them in the stash.
+		Syntax : git stash apply
+
+10) git clone: It is used to target an existing repository and create a clone, or copy of the target repository locally on device.
+		Syntax : git clone [repo HTTP/SSH url]
+
+11) git checkout: It is used to switch between branches of same repository.
+		Syntax: git checkout [branch name]
+
+12) git log: It is used to review and read a history of everything that happens to a repository.
+		Syntax: git log
+
+13) **git reset: It is a powerful command that is used to undo local changes to the state of a Git Repository.
+		Syntax: git reset --hard/--soft/--mixed
+
+Note: "Use git reset command with caution"
 =======================================================================================================================
