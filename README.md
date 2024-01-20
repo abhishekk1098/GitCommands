@@ -1,3 +1,4 @@
 ## Git Commands
 
-- The .txt file contains list of git commands used to interact with Github Platform.
+- Text file containing a list of basic git commands.
+> Reference - https://git-scm.com/docs
