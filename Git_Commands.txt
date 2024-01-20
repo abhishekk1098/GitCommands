@@ -6,6 +6,9 @@
 		- Syntax:
 			$ git config --global user.name "<username>"
 			$ git config --global user.email "<email>"
+		
+		- view the new configurations: 
+			$ git config --list 
 
 		- (git status: The git status command displays the state of the working directory and the staging area)
 		- Syntax: 
